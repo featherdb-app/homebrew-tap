@@ -6,7 +6,7 @@ cask "featherdb" do
   # anonymously. Per-version tag here (unlike site/_redirects, which points at the permanent
   # "downloads" tag) — this file gets edited every release anyway, so pinning to the exact
   # tag is more transparent than an evergreen link would be.
-  url "https://github.com/NguyenHuuPhuc/featherdb-releases/releases/download/v#{version}/FeatherDB-#{version}.dmg"
+  url "https://github.com/featherdb-app/featherdb-releases/releases/download/v#{version}/FeatherDB-#{version}.dmg"
   name "FeatherDB"
   desc "Postgres client with an MCP gateway for AI coding tools"
   homepage "https://featherdb.dev/"
