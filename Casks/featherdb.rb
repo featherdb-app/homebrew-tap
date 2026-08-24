@@ -8,8 +8,8 @@ cask "featherdb" do
 
   url "https://github.com/NguyenHuuPhuc/featherdb/releases/download/v#{version}/FeatherDB-#{version}.dmg"
   name "FeatherDB"
-  desc "Native macOS Postgres client with an MCP gateway for AI coding tools"
-  homepage "https://featherdb.dev"
+  desc "Postgres client with an MCP gateway for AI coding tools"
+  homepage "https://featherdb.dev/"
 
   # Homebrew's own livecheck reads Sparkle feeds directly — one appcast, two consumers,
   # no separate version file to keep in sync. `brew livecheck --cask featherdb` should
@@ -19,7 +19,7 @@ cask "featherdb" do
     strategy :sparkle
   end
 
-  depends_on macos: ">= :sequoia"
+  depends_on macos: :sequoia
 
   app "FeatherDB.app"
 
