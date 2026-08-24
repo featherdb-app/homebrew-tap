@@ -1,12 +1,12 @@
 cask "featherdb" do
   version "1.0.0"
-  # PLACEHOLDER — replace with `shasum -a 256 dist/FeatherDB-<version>.dmg` from the real
-  # release build. `brew audit`/`brew install` will refuse this cask until it matches the
-  # actual asset, which is the point: a wrong sha256 here is how a cask silently serves a
-  # tampered download, so Homebrew treats a mismatch as a hard failure, not a warning.
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  sha256 "fb55461b4f3390e23e684bd89ec2590c59eae2c09779394a9dc18958b0f908e8"
 
-  url "https://github.com/NguyenHuuPhuc/featherdb/releases/download/v#{version}/FeatherDB-#{version}.dmg"
+  # featherdb-releases, not featherdb: the app's source repo is private, and Homebrew downloads
+  # anonymously. Per-version tag here (unlike site/_redirects, which points at the permanent
+  # "downloads" tag) — this file gets edited every release anyway, so pinning to the exact
+  # tag is more transparent than an evergreen link would be.
+  url "https://github.com/NguyenHuuPhuc/featherdb-releases/releases/download/v#{version}/FeatherDB-#{version}.dmg"
   name "FeatherDB"
   desc "Postgres client with an MCP gateway for AI coding tools"
   homepage "https://featherdb.dev/"
