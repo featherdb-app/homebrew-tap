@@ -1,6 +1,6 @@
 cask "featherdb" do
-  version "1.9.1"
-  sha256 "7ca65d5f31f2a1c51ed4f06b139d46164afa96eeeb28ba10bed7434cef04cf9a"
+  version "1.9.2"
+  sha256 "ba8d1512398ec62d50deb024b63e7839315eb5efd174ebb643a9161038ee3fdb"
 
   # featherdb-releases, not featherdb: the app's source repo is private, and Homebrew
   # downloads anonymously. Per-version tag (unlike site/_redirects' evergreen "downloads"
