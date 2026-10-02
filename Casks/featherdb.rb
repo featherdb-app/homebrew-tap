@@ -1,9 +1,9 @@
 cask "featherdb" do
-  version "1.12.9"
-  sha256 "5dbf4fca5cdb1aafaba102e318d41d88b9d8bc40773e0f3f3aefa11b92ef351b"
+  version "1.13.0"
+  sha256 "22272d52ebd8dc92e534bbfb91879d0c293918f828eb774360368b7ecb47f7db"
 
   # featherdb-releases, not featherdb: the app's source repo is private, and Homebrew
-  # downloads anonymously. Per-version tag (unlike site/_redirects' evergreen "downloads"
+  # downloads anonymously. Per-version tag (unlike landing/_redirects' evergreen "downloads"
   # tag) — this file is bumped every release by scripts/bump-cask.sh, so pinning the exact
   # tag is more transparent than an evergreen link.
   url "https://github.com/featherdb-app/featherdb-releases/releases/download/v#{version}/FeatherDB-#{version}.dmg"
